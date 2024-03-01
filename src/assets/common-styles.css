@@ -4,3 +4,15 @@
   padding: 0 15px;
   box-sizing: content-box;
 }
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+}
+.icon g {
+  fill: white;
+}
