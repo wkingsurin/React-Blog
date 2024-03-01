@@ -3,3 +3,6 @@
 
 /* reset */
 @import url("./reset.css");
+
+/* common styles */
+@import url("./common-styles.css");

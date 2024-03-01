@@ -1,21 +1,11 @@
 import "./App.css";
+import Header from "../Header";
 
 export default function App() {
   return (
     <>
       <div className="wrapper">
-        <header className="header">
-          <div className="container">
-            <div className="content">
-              <nav className="navigation">
-                <ul className="list">
-                  <li className="page">Блог</li>
-                  <li className="page">Контакты</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </header>
+        <Header />
         <main className="main">
           <section className="blogs">
             <div className="container">

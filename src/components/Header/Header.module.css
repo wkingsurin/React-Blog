@@ -1,0 +1,21 @@
+.header {
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 180px;
+}
+.navigation {
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.page {
+}
+.page a {
+  color: inherit;
+}
