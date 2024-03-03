@@ -6,3 +6,6 @@
 
 /* common styles */
 @import url("./common-styles.css");
+
+/* colors */
+@import url("./colors.css");

@@ -1,0 +1,25 @@
+.footer {
+  flex: 0 0 85px;
+  height: 85px;
+}
+.footer > * {
+  height: 100%;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.list {
+  display: flex;
+  gap: 20px;
+}
+.link {
+}
+[name="whatsapp"]:hover g {
+  fill: var(--main-whatsapp-);
+}
+[name="telegram"]:hover g {
+  fill: var(--main-telegram-);
+}
