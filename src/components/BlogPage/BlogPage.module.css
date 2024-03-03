@@ -2,37 +2,3 @@
   flex: 0 0 700px;
   position: relative;
 }
-
-.aside {
-  position: sticky;
-  top: 0;
-
-  display: flex;
-  flex: 0 0 200px;
-  max-width: 200px;
-}
-.aside::before {
-  display: block;
-  content: "";
-  width: 1px;
-  background: white;
-  margin-right: 30px;
-}
-.navigation {
-  padding: 12px 0;
-  box-sizing: border-box;
-}
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.link {
-}
-.link a {
-  color: inherit;
-  transition: 0.2s ease-in-out;
-}
-.link a:hover {
-  color: var(--main-active-navigation-);
-}

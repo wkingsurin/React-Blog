@@ -1,0 +1,11 @@
+.link {
+  display: block;
+}
+.link a {
+  color: inherit;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.link a:hover {
+  color: var(--main-active-navigation-);
+}

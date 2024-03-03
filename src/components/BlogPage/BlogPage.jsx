@@ -3,6 +3,7 @@ import Chapter from "../Chapter";
 import Paragraph from "../Chapter/Paragraph";
 import Code from "../Chapter/Code";
 import Link from "../Chapter/Paragraph/Link";
+import Aside from "../Aside";
 
 export default function BlogPage() {
   return (
@@ -54,24 +55,7 @@ export default function BlogPage() {
           <Link>https://react.dev/learn/passing-props-to-a-component</Link>
         </Chapter>
       </div>
-      <aside className={blogPageClasses.aside}>
-        <nav className={blogPageClasses.navigation}>
-          <ul className={blogPageClasses.list}>
-            <li className={blogPageClasses.link}>
-              <a href="#pass">Передача в компонент</a>
-            </li>
-            <li className={blogPageClasses.link}>
-              <a href="#reading">Чтение</a>
-            </li>
-            <li className={blogPageClasses.link}>
-              <a href="#descturcuring">Деструктуризация пропсов</a>
-            </li>
-            <li className={blogPageClasses.link}>
-              <a href="#links">Ссылки</a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
+      <Aside />
     </>
   );
 }

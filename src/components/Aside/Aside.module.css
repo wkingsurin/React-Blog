@@ -1,0 +1,24 @@
+.aside {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex: 0 0 200px;
+  max-width: 200px;
+}
+.aside::before {
+  display: block;
+  content: "";
+  width: 1px;
+  background: white;
+  margin-right: 30px;
+}
+.navigation {
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
