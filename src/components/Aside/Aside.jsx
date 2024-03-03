@@ -1,15 +1,21 @@
 import asideClasses from "./Aside.module.css";
 import Item from "./Item";
+import { blog } from "../../blog";
 
 export default function Aside() {
   return (
     <aside className={asideClasses.aside}>
       <nav className={asideClasses.navigation}>
         <ul className={asideClasses.list}>
-          <Item text="Передача в компонент" anchor="pass" />
-          <Item text="Чтение" anchor="reading" />
-          <Item text="Деструктуризация пропсов" anchor="destructuring" />
-          <Item text="Ссылки" anchor="links" />
+          {blog.themes.map((theme) => {
+            return (
+              <Item
+                key={theme.anchor}
+                text={theme.title}
+                anchor={theme.anchor}
+              />
+            );
+          })}
         </ul>
       </nav>
     </aside>
