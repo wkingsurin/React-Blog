@@ -4,16 +4,7 @@
 .blogs {
 }
 .content {
-}
-.item {
-}
-.image {
-}
-.imageTitle {
-}
-.description {
-}
-.title {
-}
-.text {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
 }

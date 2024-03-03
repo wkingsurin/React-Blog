@@ -1,4 +1,7 @@
 :root {
+  --main-default-: #2d3142;
+  --main-active-card-: #444c59;
+  --main-no-active-card-: #4f5d75;
   --main-telegram-: #18a3e6;
   --main-whatsapp-: #22d466;
 }
