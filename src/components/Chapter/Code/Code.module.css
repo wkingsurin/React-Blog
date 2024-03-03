@@ -6,9 +6,6 @@
   border-radius: 7px;
   font-family: "Consolas";
 }
-.tag {
-  color: var(--main-tag-);
-}
 .attribute {
   color: var(--main-attribute-);
 }

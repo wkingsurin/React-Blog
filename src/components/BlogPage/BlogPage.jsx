@@ -6,6 +6,17 @@ import Link from "../Chapter/Paragraph/Link";
 import Aside from "../Aside";
 
 export default function BlogPage() {
+  const codeText0 = `<Title text="Заголовок" />`;
+  const codeText1 = `function Title(props) {
+      return <h1>{props.text}</h1>;
+    }`;
+  const codeText2 = `function Title({ text }) {
+        return <h1>{text}</h1>;
+      }`;
+  const codeText3 = `function Title({ text }) {
+          return <h1>{text}</h1>;
+        }`;
+
   return (
     <>
       <div className={blogPageClasses.content}>
@@ -20,7 +31,7 @@ export default function BlogPage() {
           <Paragraph>
             Передача пропсов в компонент, выглядит следующим образом:
           </Paragraph>
-          <Code></Code>
+          <Code language="javascript">{codeText0}</Code>
         </Chapter>
         <Chapter title="Чтение" anchor="reading" paragraphs={[]}>
           <Paragraph>
@@ -31,7 +42,7 @@ export default function BlogPage() {
             quae velit.
           </Paragraph>
           <Paragraph>Чтение пропса в компоненте:</Paragraph>
-          <Code></Code>
+          <Code language="javascript">{codeText1}</Code>
         </Chapter>
         <Chapter
           title="Деструктуризация пропсов"
@@ -46,9 +57,9 @@ export default function BlogPage() {
             quae velit.
           </Paragraph>
           <Paragraph>Первый способ:</Paragraph>
-          <Code></Code>
+          <Code language="javascript">{codeText2}</Code>
           <Paragraph>Второй способ:</Paragraph>
-          <Code></Code>
+          <Code language="javascript">{codeText3}</Code>
         </Chapter>
         <Chapter title="Ссылки" anchor="links" paragraphs={[]}>
           <Link>https://react.dev/learn/passing-props-to-a-component</Link>

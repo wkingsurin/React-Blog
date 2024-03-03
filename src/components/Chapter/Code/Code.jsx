@@ -1,12 +1,40 @@
 import codeClasses from "./Code.module.css";
+// import SyntaxHighlighter from "react-syntax-highlighter";
+// import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+const customStyle = {
+  borderRadius: "7px",
+  backgroundColor: "#0E1114",
+  padding: "15px 20px",
+};
 
-export default function Code() {
+import { useEffect } from "react";
+import Prism from "prismjs";
+import "prismjs/themes/prism-duotone-sea.css";
+
+export default function Code({ children, language }) {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
+  // const codeString = `${children}`;
+  // const codeString = `function Title(props) {
+  //     return <h1>{props.text}</h1>;
+  //   }`;
+
   return (
-    <code className={codeClasses.code}>
-      &lt;<span className={codeClasses.tag}>Title</span>{" "}
-      <span className={codeClasses.attribute}>text</span>
-      <span className={codeClasses.operator}>=</span>
-      <span className={codeClasses.text}>"Заголовок"</span> &gt;;
-    </code>
+    <pre style={customStyle}>
+      <code
+        className={`language-${language}`}
+        style={{ backgroundColor: "transparent" }}
+      >
+        {children}
+      </code>
+    </pre>
+    // <SyntaxHighlighter
+    //   language="jsx"
+    //   style={a11yDark}
+    //   customStyle={customStyle}
+    // >
+    //   {codeString}
+    // </SyntaxHighlighter>
   );
 }
