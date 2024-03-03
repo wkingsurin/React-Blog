@@ -15,7 +15,7 @@ export default function BlogPage() {
             {theme.paragraphs.map((p) => {
               const hasCode = p.code ? true : false;
               return (
-                <Paragraph key={p.code} code={hasCode ? p.code : false}>
+                <Paragraph key={p.id} code={hasCode ? p.code : false}>
                   {p.text}
                 </Paragraph>
               );
