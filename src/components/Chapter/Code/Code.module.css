@@ -1,0 +1,20 @@
+.code {
+  display: block;
+  background: var(--main-code-);
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-family: "Consolas";
+}
+.tag {
+  color: var(--main-tag-);
+}
+.attribute {
+  color: var(--main-attribute-);
+}
+.operator {
+  color: var(--main-operator-);
+}
+.text {
+  color: var(--main-text-);
+}

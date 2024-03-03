@@ -1,0 +1,17 @@
+.chapter {
+  width: 100%;
+  max-width: 700px;
+}
+.chapter:not(:last-child) {
+  margin-bottom: 50px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.description {
+}
+.description > *:not(:last-child) {
+  margin-bottom: 20px;
+}

@@ -1,5 +1,6 @@
 import mainClasses from "./Main.module.css";
-import BlogCard from "../BlogCard/BlogCard";
+import BlogCard from "../BlogCard";
+import BlogPage from "../BlogPage";
 
 export default function Main() {
   return (
@@ -7,9 +8,12 @@ export default function Main() {
       <section className={mainClasses.blogs}>
         <div className="container">
           <div className={mainClasses.content}>
-            <BlogCard theme="состояние" />
-            <BlogCard theme="пропсы" />
-            <BlogCard theme="хуки" />
+            {/* <>
+              <BlogCard theme="состояние" />
+              <BlogCard theme="пропсы" />
+              <BlogCard theme="хуки" />
+            </> */}
+            <BlogPage />
           </div>
         </div>
       </section>
