@@ -2,7 +2,7 @@ import linkClasses from "./Link.module.css";
 
 export default function Link({ children }) {
   return (
-    <a href="#" className={linkClasses.link}>
+    <a href={children} className={linkClasses.link} target="blank">
       {children}
     </a>
   );
