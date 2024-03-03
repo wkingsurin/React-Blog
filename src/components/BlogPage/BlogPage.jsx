@@ -8,14 +8,15 @@ import Aside from "../Aside";
 export default function BlogPage() {
   const codeText0 = `<Title text="Заголовок" />`;
   const codeText1 = `function Title(props) {
-      return <h1>{props.text}</h1>;
-    }`;
+    return <h1>{props.text}</h1>;
+}`;
   const codeText2 = `function Title({ text }) {
-        return <h1>{text}</h1>;
-      }`;
-  const codeText3 = `function Title({ text }) {
-          return <h1>{text}</h1>;
-        }`;
+    return <h1>{text}</h1>;
+}`;
+  const codeText3 = `function Title(props) {
+    const { text } = props;
+    return <h1>{text}</h1>;
+}`;
 
   return (
     <>
@@ -46,7 +47,7 @@ export default function BlogPage() {
         </Chapter>
         <Chapter
           title="Деструктуризация пропсов"
-          anchor="descturcuring"
+          anchor="destructuring"
           paragraphs={[]}
         >
           <Paragraph>

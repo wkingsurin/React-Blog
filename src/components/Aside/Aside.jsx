@@ -6,10 +6,10 @@ export default function Aside() {
     <aside className={asideClasses.aside}>
       <nav className={asideClasses.navigation}>
         <ul className={asideClasses.list}>
-          <Item text="Передача в компонент" />
-          <Item text="Чтение" />
-          <Item text="Деструктуризация пропсов" />
-          <Item text="Ссылки" />
+          <Item text="Передача в компонент" anchor="pass" />
+          <Item text="Чтение" anchor="reading" />
+          <Item text="Деструктуризация пропсов" anchor="destructuring" />
+          <Item text="Ссылки" anchor="links" />
         </ul>
       </nav>
     </aside>
